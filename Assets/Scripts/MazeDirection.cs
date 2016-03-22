@@ -16,6 +16,17 @@ public static class MazeDirections {
 			return (MazeDirection)Random.Range(0, Count);
 		}
 	}
+
+	private static MazeDirection[] opposites = {
+		MazeDirection.South,
+		MazeDirection.West,
+		MazeDirection.North,
+		MazeDirection.East
+	};
+
+	public static MazeDirection GetOpposite (this MazeDirection direction) {
+		return opposites[(int)direction];
+	}
 	
 	private static IntVector2[] vectors = {
 		new IntVector2(0, 1),

@@ -25,6 +25,6 @@ public class GameManager : MonoBehaviour {
 	private void RestartGame () {
 		StopAllCoroutines();
 		Destroy(mazeInstance.gameObject);
-		BeginGame();  //re-initialize 
+		BeginGame();
 	}
 }
